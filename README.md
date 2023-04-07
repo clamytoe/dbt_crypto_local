@@ -550,12 +550,40 @@ change_percent_avg | NUMERIC | 100.0% | 100.0%
 6. Commit your changes and push your branch.
 
 ```bash
-git add .
-git commit -m "Fixed eth and bnb models"
-git push origin data-modeling
+(decap) ➜  dbt git:(data-modeling) ✗ git add .
+(decap) ➜  dbt git:(data-modeling) ✗ git commit -m "Fixed fact_eth and fact_bnb models"
+[data-modeling 6b65292] Fixed fact_eth and fact_bnb models
+ 9 files changed, 561 insertions(+), 2 deletions(-)
+ create mode 100644 dbt/.piperider/.gitignore
+ create mode 100644 dbt/.piperider/assertions/placeholder.txt
+ create mode 100644 dbt/.piperider/compare/default.yml
+ create mode 100644 dbt/.piperider/config.yml
+ create mode 100644 dbt/.piperider/plugins/customized_assertions.py.template
+ create mode 100644 images/pr-run.png
+(decap) ➜  dbt git:(data-modeling) git push origin data-modeling
+Enter passphrase for key '/home/clamytoe/.ssh/id_ed25519':
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (19/19), 123.20 KiB | 2.24 MiB/s, done.
+Total 19 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote:
+remote: Create a pull request for 'data-modeling' on GitHub by visiting:
+remote:      https://github.com/clamytoe/dbt_crypto_local/pull/new/data-modeling
+remote:
+To github.com:clamytoe/dbt_crypto_local.git
+ * [new branch]      data-modeling -> data-modeling
 ```
 
 7. Create a pull request
+  a. Visit your repo on GitHub and click `Compare & pull report`
+  b. Copy the contents of the comparison summary Markdown file into your pull request comment box
+  c. Click `preview` to see how the comparison looks
+  d. Click `Create pull request` to submit your changes
+
+![pr-pr](images/pr-pr.png)
 
 ## License
 
