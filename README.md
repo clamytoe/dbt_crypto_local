@@ -416,19 +416,20 @@ The comparison summary markdown can now be used as a pull request (PR) comment.
 
 Table | Rows | Columns
 --- | --- | ---
-fact_xrp | 1 (-100) | 5 (+0)
-fact_usdc | 1 (-100) | 5 (+0)
-fact_coins | 100 (-572600) | 11 (+0)
-fact_btc | 1 (-100) | 5 (+0)
-fact_doge | 1 (-100) | 5 (+0)
-fact_usdt | 1 (-100) | 5 (+0)
-fact_ada | 1 (-100) | 5 (+0)
-fact_eth | 1 (+1) | 5 (+0)
-fact_bnb | 1 (+1) | 5 (+0)
+fact_xrp | 0 (-1) | 5 (+0)
+fact_coins | 100 (+0) | 11 (+0)
+fact_btc | 4 (+3) | 5 (+0)
+fact_doge | 0 (-1) | 5 (+0)
+fact_usdt | 0 (-1) | 5 (+0)
+fact_ada | 0 (-1) | 5 (+0)
+fact_eth | 0 (-1) | 5 (+0)
+fact_bnb | 0 (-1) | 5 (+0)
+fact_forecast (+) | 14040 | 3
+fact_usdc | 0 (-1) | 5 (+0)
 
 </details>
 <details>
-<summary>Tables Summary</summary>
+<summary>Tables Summary (added=1)</summary>
 <blockquote>
 
 <details>
@@ -436,23 +437,11 @@ fact_bnb | 1 (+1) | 5 (+0)
 
 Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
-timestamp | TIMESTAMP | 100.0% (+0.0%) | 100.0% (+0.0%)
-price_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-supply_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+99.01%)
-volume_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-
-</details>
-<details>
-<summary>fact_usdc</summary>
-
-Column | Type | Valid % | Distinct %
---- | --- | --- | ---
-timestamp | TIMESTAMP | 100.0% (+0.0%) | 100.0% (+0.0%)
-price_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-supply_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+23.76%)
-volume_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
+timestamp | TIMESTAMP | - | -
+price_avg | NUMERIC | - | -
+supply_avg | NUMERIC | - | -
+volume_avg | NUMERIC | - | -
+change_percent_avg | NUMERIC | - | -
 
 </details>
 <details>
@@ -460,17 +449,17 @@ change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
 
 Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
-id | VARCHAR | 100.0% (+0.0%) | 100.0% (+99.98%)
-timestamp | TIMESTAMP | 100.0% (+0.0%) | 1.0% (+0.0%)
-rank | INTEGER | 100.0% (+0.0%) | 100.0% (+99.98%)
-symbol | VARCHAR | 100.0% (+0.0%) | 100.0% (+99.98%)
-name | VARCHAR | 100.0% (+0.0%) | 100.0% (+99.98%)
-supply | NUMERIC | 100.0% (+0.0%) | 98.0% (+97.61%)
-market_cap_usd | NUMERIC | 100.0% (+0.0%) | 100.0% (+2.11%)
-volume_usd_24hr | NUMERIC | 100.0% (+0.0%) | 100.0% (+2.11%)
-price_usd | NUMERIC | 100.0% (+0.0%) | 100.0% (+3.65%)
-change_percent_24hr | NUMERIC | 100.0% (+0.0%) | 100.0% (+12.85%)
-url | VARCHAR | 100.0% (+0.0%) | 99.0% (+98.98%)
+id | VARCHAR | 100.0% (+0.0%) | 1.0% (-99.0%)
+timestamp | TIMESTAMP | 100.0% (+0.0%) | 100.0% (+99.0%)
+rank | INTEGER | 100.0% (+0.0%) | 1.0% (-99.0%)
+symbol | VARCHAR | 100.0% (+0.0%) | 1.0% (-99.0%)
+name | VARCHAR | 100.0% (+0.0%) | 1.0% (-99.0%)
+supply | NUMERIC | 100.0% (+0.0%) | 2.0% (-96.0%)
+market_cap_usd | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
+volume_usd_24hr | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
+price_usd | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
+change_percent_24hr | NUMERIC | 100.0% (+0.0%) | 90.0% (-10.0%)
+url | VARCHAR | 100.0% (+0.0%) | 1.0% (-98.0%)
 
 </details>
 <details>
@@ -480,7 +469,7 @@ Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
 timestamp | TIMESTAMP | 100.0% (+0.0%) | 100.0% (+0.0%)
 price_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-supply_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+8.91%)
+supply_avg | NUMERIC | 100.0% (+0.0%) | 50.0% (-50.0%)
 volume_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
 change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
 
@@ -490,11 +479,11 @@ change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
 
 Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
-timestamp | TIMESTAMP | 100.0% (+0.0%) | 100.0% (+0.0%)
-price_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-supply_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+8.91%)
-volume_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
+timestamp | TIMESTAMP | - | -
+price_avg | NUMERIC | - | -
+supply_avg | NUMERIC | - | -
+volume_avg | NUMERIC | - | -
+change_percent_avg | NUMERIC | - | -
 
 </details>
 <details>
@@ -502,11 +491,11 @@ change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
 
 Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
-timestamp | TIMESTAMP | 100.0% (+0.0%) | 100.0% (+0.0%)
-price_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-supply_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+91.09%)
-volume_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
+timestamp | TIMESTAMP | - | -
+price_avg | NUMERIC | - | -
+supply_avg | NUMERIC | - | -
+volume_avg | NUMERIC | - | -
+change_percent_avg | NUMERIC | - | -
 
 </details>
 <details>
@@ -514,11 +503,11 @@ change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
 
 Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
-timestamp | TIMESTAMP | 100.0% (+0.0%) | 100.0% (+0.0%)
-price_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-supply_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+8.91%)
-volume_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
-change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
+timestamp | TIMESTAMP | - | -
+price_avg | NUMERIC | - | -
+supply_avg | NUMERIC | - | -
+volume_avg | NUMERIC | - | -
+change_percent_avg | NUMERIC | - | -
 
 </details>
 <details>
@@ -526,11 +515,11 @@ change_percent_avg | NUMERIC | 100.0% (+0.0%) | 100.0% (+0.0%)
 
 Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
-timestamp | TIMESTAMP | 100.0% | 100.0%
-price_avg | NUMERIC | 100.0% | 100.0%
-supply_avg | NUMERIC | 100.0% | 100.0%
-volume_avg | NUMERIC | 100.0% | 100.0%
-change_percent_avg | NUMERIC | 100.0% | 100.0%
+timestamp | TIMESTAMP | - | -
+price_avg | NUMERIC | - | -
+supply_avg | NUMERIC | - | -
+volume_avg | NUMERIC | - | -
+change_percent_avg | NUMERIC | - | -
 
 </details>
 <details>
@@ -538,11 +527,33 @@ change_percent_avg | NUMERIC | 100.0% | 100.0%
 
 Column | Type | Valid % | Distinct %
 --- | --- | --- | ---
-timestamp | TIMESTAMP | 100.0% | 100.0%
-price_avg | NUMERIC | 100.0% | 100.0%
-supply_avg | NUMERIC | 100.0% | 100.0%
-volume_avg | NUMERIC | 100.0% | 100.0%
-change_percent_avg | NUMERIC | 100.0% | 100.0%
+timestamp | TIMESTAMP | - | -
+price_avg | NUMERIC | - | -
+supply_avg | NUMERIC | - | -
+volume_avg | NUMERIC | - | -
+change_percent_avg | NUMERIC | - | -
+
+</details>
+<details>
+<summary>fact_forecast (+)</summary>
+
+Column | Type | Valid % | Distinct %
+--- | --- | --- | ---
+symbol (+) | VARCHAR | 100.0% | 0.78%
+hour (+) | TIMESTAMP | 100.0% | 0.98%
+avg_price_usd (+) | NUMERIC | 100.0% | 99.81%
+
+</details>
+<details>
+<summary>fact_usdc</summary>
+
+Column | Type | Valid % | Distinct %
+--- | --- | --- | ---
+timestamp | TIMESTAMP | - | -
+price_avg | NUMERIC | - | -
+supply_avg | NUMERIC | - | -
+volume_avg | NUMERIC | - | -
+change_percent_avg | NUMERIC | - | -
 
 </details>
 </blockquote></details>
